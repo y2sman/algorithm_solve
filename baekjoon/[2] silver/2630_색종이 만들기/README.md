@@ -1,7 +1,7 @@
 # 색종이 만들기
 
 - 랭크 : 실버 3
-- [색종이 만들기]](https://www.acmicpc.net/problem/2630)
+- [색종이 만들기](https://www.acmicpc.net/problem/2630)
 - 분할 정복
 - 재귀
 
