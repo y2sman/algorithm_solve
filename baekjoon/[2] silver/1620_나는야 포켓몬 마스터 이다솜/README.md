@@ -31,3 +31,12 @@
 
 언젠가 익숙해지겠지~
 
+<br><br>
+PS. vector에서 pair를 쓰고있을때 second 기준으로 정렬하는 방법
+```cpp
+bool sortbysec(const pair<int, string> &a, const pair<int, string> &b)
+{
+  return (a.second < b.second);
+}
+```
+이걸 sort 할때 넣어주면 된다. 이게 pair<int, int>의 비교가 아니라도, 대소비교로 하면 잘 된다. vector에 pair를 넣어 쓰는 경우가 많은데, 앞으로 잘 애용해야겠다.
