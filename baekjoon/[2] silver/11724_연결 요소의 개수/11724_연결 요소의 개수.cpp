@@ -58,24 +58,6 @@ int main()
         }
     }
 
-    /*
-    for(int i=1;i<=N;i++)
-    {
-        printf("%d ",node[i]);
-    }
-    */
-
     printf("%d",counter);
     return 0;
 }
-
-/*
-3 1
-1 2
--> 2
-
-6 2
-3 4
-4 2
--> 4
-*/

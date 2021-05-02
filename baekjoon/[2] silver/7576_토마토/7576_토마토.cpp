@@ -34,14 +34,11 @@ void bfs()
         int current_y = location.second;
         q.pop();
 
-        //printf("DD [%d] : %d %d\n",stage,current_x,current_y);
-
         for(int i=0;i<4;i++)
         {
             int loc_x = current_x + moving_x[i];
             int loc_y = current_y + moving_y[i];
             
-            //printf("    GF : %d %d - %d\n",loc_x,loc_y,visited[loc_x][loc_y]);
             if(loc_x < 0 || loc_y < 0)
             {
                 continue;
@@ -52,8 +49,6 @@ void bfs()
                 continue;
             }            
             
-            //printf("    GB : %d %d - %d\n",loc_x,loc_y,visited[loc_x][loc_y]);
-
             if(visited[loc_x][loc_y] == 0 && box[loc_x][loc_y] == 0)
             {
                 visited[loc_x][loc_y] = 1;
@@ -86,44 +81,7 @@ int main()
         }
     }
 
-    /*
-    printf("Map\n");
-    for(int i=0;i<M;i++)
-    {
-        for(int j=0;j<N;j++)
-        {
-            printf("%d ", box[i][j]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-
-    printf("Visited\n");
-    for(int i=0;i<M;i++)
-    {
-        for(int j=0;j<N;j++)
-        {
-            printf("%d ", visited[i][j]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-    */
-
     bfs();
-
-    /*
-    printf("Visited\n");
-    for(int i=0;i<M;i++)
-    {
-        for(int j=0;j<N;j++)
-        {
-            printf("%d ", visited[i][j]);
-        }
-        printf("\n");
-    }
-    printf("\n");
-    */
 
     for(int i=0;i<M;i++)
     {
