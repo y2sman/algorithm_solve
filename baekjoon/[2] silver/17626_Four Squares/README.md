@@ -2,6 +2,8 @@
 
 - 랭크 : 실버 5
 - [Four Squares](https://www.acmicpc.net/problem/17626)
+- 다이나믹 프로그래밍
+- 브루트포스 알고리즘
 
 # 풀이
 
